@@ -16,28 +16,14 @@ void generateFibonacci(int n) {
 
 int main() {
     int n;
-    printf("Enter the number of terms (1-47): ");
+    printf("Enter the number of terms: ");
     scanf("%d", &n);
-
-    if (n < 1 || n > 47) {
-        printf("Error: Input must be a natural number between 1 and 47\n");
-    return 1;
-    }
 
     if (n >= 48) {
         printf("Overflow: Input too large\n");
-        return 1;
-    }
-    else {
+    } else {
         generateFibonacci(n);
     }
 
     return 0;
 }
-// fibonacci.h
-#ifndef FIBONACCI_H
-#define FIBONACCI_H
-
-void generateFibonacci(int n);
-
-#endif // FIBONACCI_H
